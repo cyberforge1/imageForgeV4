@@ -1,10 +1,10 @@
 from random import *
 import random
 
-from data import subjects, objects, environments, famous_artists, locations, stylings, prepositions, adjectives, verbs, adverbs
+from imageGeneration.data import subjects, objects, environments, famous_artists, locations, stylings, prepositions, adjectives, verbs, adverbs
 
 
-def generate_prompt():
+def generatePrompt():
         x = randint(1, 100)
 
         if x < 33:
