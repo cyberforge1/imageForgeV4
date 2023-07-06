@@ -1,0 +1,11 @@
+</head>
+<body>
+    <h1>Prompts</h1>
+    {% for prompt in prompts %}
+        <div>
+            <p>{{ prompt.date_added }}</p>
+            <p>{{ prompt.text }}</p>
+        </div>
+    {% endfor %}
+</body>
+</html>
