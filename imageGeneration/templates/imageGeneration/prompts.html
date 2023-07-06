@@ -1,11 +1,22 @@
-</head>
-<body>
-    <h1>Prompts</h1>
-    {% for prompt in prompts %}
+<html>
+  <head>
+    <title>Prompts List</title>
+  </head>
+  <body>
+    <h1>Prompts List</h1>
+    <ul>
+      {% for prompt in prompts %}
+      <br />
+      <li>
         <div>
-            <p>{{ prompt.date_added }}</p>
-            <p>{{ prompt.text }}</p>
+          <strong>Date Added:</strong> {{ prompt.date_added }}<br />
+          <p>Text Field: {{ prompt.text_field }}</p>
         </div>
-    {% endfor %}
-</body>
+        <br />
+      </li>
+      {% empty %}
+      <li>No prompts found.</li>
+      {% endfor %}
+    </ul>
+  </body>
 </html>

@@ -1,7 +1,7 @@
 from random import *
 import random
 
-from imageGeneration.data import subjects, objects, environments, famous_artists, locations, stylings, prepositions, adjectives, verbs, adverbs
+from data import subjects, objects, environments, famous_artists, locations, stylings, prepositions, adjectives, verbs, adverbs
 
 
 def generatePrompt():
